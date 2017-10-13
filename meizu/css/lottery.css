@@ -1,0 +1,244 @@
+#progress {
+  height: 4px;
+  background: #3db1fa;
+  width: 0;
+  transition: opacity 500ms linear;
+}
+em {
+  font-style: normal;
+}
+.wrap {
+  border: 1px solid #e1e2e2;
+  width: 1038px;
+  background: #fff;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.section-left {
+  float: left;
+  border-right: 1px solid #d1d1d1;
+  width: 698px;
+  height: 999px;
+  position: relative;
+  background: url(../img/lottery/bg.jpg) no-repeat 0 0;
+}
+.paomadeng {
+  position: absolute;
+  left: 72px;
+  top: 225px;
+  width: 555px;
+  height: 555px;
+  background: url(../img/lottery/p1.png) no-repeat 0 0;
+  z-index: 10;
+}
+.draw-cont {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 502px;
+  height: 502px;
+  margin-top: -251px;
+  margin-left: -251px;
+  z-index: 10;
+}
+.plus {
+  width: 551px;
+  height: 312px;
+  position: absolute;
+  left: 80px;
+  background: url(../img/lottery/32.png) no-repeat 0 0;
+}
+.rule-box {
+  width: 583px;
+  height: 116px;
+  padding: 41px 0 10px 20px;
+  position: absolute;
+  left: 60px;
+  bottom: 30px;
+  background: url(../img/lottery/rule-bg.png) no-repeat 0 0;
+}
+.rule-box p {
+  font-size: 14px;
+  padding-bottom: 8px;
+  color: #fff;
+}
+.rule-box p i {
+  float: left;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  font-style: normal;
+  margin-right: 5px;
+}
+#bt-lottery,
+.pin {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-top: -45px;
+  margin-left: -45px;
+  outline: none;
+  border: none;
+  z-index: 11;
+  background: transparent;
+}
+.pin {
+  width: 113px;
+  height: 138px;
+  z-index: 10;
+  margin-left: -57px;
+  margin-top: -69px;
+  border-radius: 0;
+}
+.section-right {
+  float: left;
+  padding: 40px 24px 0;
+  width: 290px;
+}
+.loginstatus {
+  text-align: center;
+  height: 127px;
+  width: 100%;
+}
+.login_no p {
+  margin-top: 25px;
+}
+.login_no .login_btn {
+  margin: 22px auto;
+  width: 110px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  color: #fff;
+  background: #02a7ea;
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+.login_yes {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.c_blue {
+  font-size: 22px;
+  color: #02a7ea;
+}
+.line {
+  background-color: #d1d1d1;
+  height: 1px;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.active-info {
+  float: left;
+  padding: 8px 0;
+}
+.winner-list {
+  float: left;
+  margin-top: 20px;
+  background: #f5f5f5;
+  width: 100%;
+  height: 437px;
+}
+.winner-list h2 {
+  background: #02a7ea;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 46px;
+}
+.winner-list div {
+  height: 355px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.winner-list ul {
+  padding: 0 15px 16px;
+  width: 260px;
+  float: left;
+  position: relative;
+}
+.winner-list li {
+  line-height: 35px;
+  width: 100%;
+  float: left;
+}
+.giftname {
+  float: right;
+  font-size: 15px;
+}
+.uname {
+  display: inline-block;
+  width: 110px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+.modal-lottery {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modal-lottery > div {
+  width: 500px;
+  height: 300px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -150px;
+  margin-left: -200px;
+}
+.prompt {
+  width: 92%;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.prompt p {
+  font-size: 20px;
+  float: left;
+}
+.prompt span {
+  float: right;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+}
+.gift-info {
+  width: 100%;
+  height: 243px;
+  text-align: center;
+}
+.gift-info p {
+  margin-top: 100px;
+  font-size: 25px;
+}
+.gift-info p span {
+  color: #0088CC;
+  font-size: 28px;
+  margin-left: 10px;
+}
+.close {
+  cursor: pointer;
+}
+.close:hover {
+  background: #FE0000;
+  color: #fff;
+}

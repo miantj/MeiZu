@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="魅族 PRO 6 Plus 概述、魅族、魅蓝图片、魅族官网、魅族商城" >
+    <link rel="stylesheet" href="css/login.css"/>
+    <link href="img/favicon-2e71785f44.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="img/favicon-2e71785f44.ico" rel="icon" type="image/x-icon" />
+    <title>魅族登录页</title>
+
+</head>
+<body>
+<div id="progress"></div>
+<script>
+    var pgs=document.querySelector("#progress");
+    var wid=0;
+    var timer = setInterval(function(){
+        wid+=1;
+        pgs.style.width=wid+'%';
+        if(wid >=90){
+            clearInterval(timer);
+        }
+    },30);
+</script>
+<div class="video">
+    <video  src="bg2.mov" autoplay loop muted  preload="auto"></video>
+</div>
+
+<!---------页面顶部logo---------->
+<header id="header">
+        <div class="header_top">
+            <a href="mz_shop.html">
+              <span class="logo"></span>
+            </a>
+        </div>
+</header>
+<!----------------页面主体------------->
+<section id="section">
+    <div class="section_bg" >
+        <!--登录表单-->
+        <form id="form" >
+                <div id="stn" >
+                    <a>
+                        账号登录
+                    </a>
+                    <span class="ll"></span>
+                    <a class="me">
+                        手机登录
+                    </a>
+                    <a class="code_c">
+
+                    </a>
+                </div>
+            <div id="code1">
+                <span class="info" style="visibility:hidden">
+                    HTML
+                </span>
+
+                <div class="section_form_text">
+                    <input type="text" class="form_text"  name="username" placeholder="请输入邮箱或手机号" maxlength="16" />
+                </div>
+                <div class="section_form_pass">
+                    <input type="password" class="form_pass"  name="pwd" placeholder="密码" maxlength="8"/>
+                </div>
+                <div class="section_form_checkbox">
+                    <input type="checkbox" id="checkbox1" name="checkbox1"/><label for="checkbox1">记住登录状态</label>
+                </div>
+                <div class="section_form_bottom">
+                    <input type="button" class="form_bottom" value="登录">
+                </div>
+                <div class="section_form_footer">
+                    <a href="register.html">注册</a>
+                    <a href="register.html" class="rt">忘记密码？</a>
+                </div>
+            </div>
+            <div id="code2" style="z-index: 10;" >
+                <span class="info bg" style="opacity: 0">
+                    HTML
+                </span>
+                <div class="section_form_text">
+                    <input type="text" name="phones" class="form_text" placeholder="请输入手机号" maxlength="16"/>
+                </div>
+                <div class="section_form_code">
+                    <input type="text" name="user" class="form_code" placeholder="请输入验证码" maxlength="6"/>
+                    <a class="get"></a>
+                </div>
+                <div class="section_form_bottom">
+                    <input type="button" class="form_bottom" value="登录">
+                </div>
+                <div class="section_form_footer">
+                    <a href="register.html">注册</a>
+                    <a href="register.html" class="rt">忘记密码？</a>
+                </div>
+            </div>
+            <div id="code3" style="display: none;">
+                <p>扫码安全登录</p>
+                <img src="images/show.jpg"/>
+                <p>请使用最新Flyme系统相机扫码功能，扫码登录</p>
+            </div>
+        </form>
+    </div>
+</section>
+<!-------------页面底部------------>
+<footer id="footer">
+    <div class="fot_bao">
+        <div class=" fot_bao_kefu">
+            <p class="p1">
+                <a href="mz_shop.html">关于魅族</a>
+                <span class="l"></span>
+                <a href="mz_shop.html">工作机会</a>
+                <span class="l"></span>
+                <a href="mz_shop.html">联系我们</a>
+                <span class="l"></span>
+                <a href="mz_shop.html">法律声明</a>
+                <span class="l"></span>
+                <a href="mz_shop.html">常见问题</a>
+                <span class="l"></span>
+                <a href="mz_shop.html">简体中文</a> &nbsp; &nbsp; &nbsp; &nbsp;
+                客服热线 &nbsp; &nbsp;400-788-3333&nbsp; &nbsp;&nbsp; &nbsp;
+                <a class="kefu">在线客服</a>
+                <!--右侧微信-->
+                <a href="mz_shop.html">
+                    <span class="qq rt"></span>
+                </a>
+                <a href="mz_shop.html">
+                    <span class="wx rt">
+                        <img src="Images/weixin.png" />
+                    </span>
+                </a>
+                <a href="mz_shop.html">
+                <span class="wb rt"></span>
+                </a>
+            </p>
+            <!--底部版权声明-->
+                    <p class="p2">
+                        ©2017 Meizu Telecom Equipment Co., Ltd. All rights reserved.
+                        &nbsp;备案号：
+                        <a href="mz_shop.html">粤ICP备13003602号-2</a>
+                        经营许可证编号：<a href="mz_shop.html">粤B2-20130198</a>
+                        <a href="mz_shop.html">营业执照</a>
+                    </p>
+
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/login.js"></script>
+
+
+</body>
+</html>

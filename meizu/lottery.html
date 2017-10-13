@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>抽奖</title>
+  <link href="img/favicon-2e71785f44.ico" rel="shortcut icon" type="image/x-icon" />
+  <link href="img/favicon-2e71785f44.ico" rel="icon" type="image/x-icon" />
+  <link rel = 'stylesheet' href = 'css/common.css'>
+  <link rel = 'stylesheet' href = 'css/lottery.css'>
+</head>
+<body>
+<div id="progress"></div>
+<script>
+  var pgs=document.querySelector("#progress");
+  var wid=0;
+  var timer = setInterval(function(){
+    wid+=1;
+    pgs.style.width=wid+'%';
+    if(wid >=90){
+      clearInterval(timer);
+    }
+  },30);
+</script>
+<div class="header-box"></div>
+<section>
+  <div class="wrap">
+    <div class="section-left">
+      <div class="plus"></div>
+      <div class="paomadeng"></div>
+      <div class="draw-cont">
+        <canvas id="canvas"></canvas>
+        <img src="img/lottery/pin.png" class="pin">
+        <button id="bt-lottery"></button>
+      </div>
+      <div class="rule-box">
+        <p><i>-</i>每天限抽5次</p>
+        <p><i>-</i>实物奖中奖用户请在弹出界面填写收货信息，奖品会在15个工作日内寄出；</p>
+        <p><i>-</i>如因操作失误未能填写有效收货信息，可至「个人主页-中奖记录」中补填；</p>
+        <p><i>-</i>魅族社区有权在法律允许的范围内对本活动进行解释。</p>
+      </div>
+    </div>
+    <div class="section-right">
+      <div class = "loginstatus">
+        <div class="login_no">
+          <p>登录后才可以参加抽奖哦</p>
+          <a href="login.html" class="login_btn">登录</a>
+        </div>
+        <div class="login_yes hide">
+          <p>每日抽奖次数 <em class="c_blue">5</em> 次</p>
+          <p>剩余抽奖次数 <em class="c_blue leave_times"></em> 次</p>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class = "active-info">
+        <a href="#"><img src="img/active-info-1.jpg" alt=""/></a>
+      </div>
+      <div class="line"></div>
+      <div class="winner-list">
+        <h2>中奖名单</h2>
+        <div>
+          <ul class="lottery-info">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal-lottery">
+  <div>
+    <div class="prompt">
+      <p>温馨提示</p>
+      <span class="close">&times;</span>
+    </div>
+    <div class="gift-info">
+      <p>恭喜您获得 <span class="gift-name">xiongmao</span></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer-box"></div>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/lottery.js"></script>
+</body>
+</html>

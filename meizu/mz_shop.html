@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <meta charset="UTF-8">
+    <title>魅族商城</title>
+    <link href="img/favicon-2e71785f44.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="img/favicon-2e71785f44.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/mz_shop.css"/>
+
+</head>
+<body>
+<div id="progress"></div>
+<script>
+    var pgs=document.querySelector("#progress");
+    var wid=0;
+    var timer = setInterval(function(){
+        wid+=1;
+        pgs.style.width=wid+'%';
+        if(wid >=90){
+            clearInterval(timer);
+        }
+    },30);
+</script>
+<!---------------------------页面顶部-------------------->
+    <header>
+        <div class="bgcolor">
+        <div id="top_text">
+            <!--页面顶部左侧-->
+            <ul class="top_left_nav lf">
+                <li>
+                    <a href="plus.html">
+                        魅族官网
+                    </a>
+                </li>
+                <li>
+                    <a href="plus.html">
+                        魅族商场
+                    </a>
+                </li>
+                <li>
+                    <a href="lottery.html">
+                        Flyme
+                    </a>
+                </li>
+                <li>
+                    <a href="lottery.html">
+                        专卖店
+                    </a>
+                </li>
+                <li>
+                    <a href="lottery.html">
+                        服务
+                    </a>
+                </li>
+                <li>
+                    <a href="lottery.html">
+                        社区
+                    </a>
+                </li>
+            </ul>
+            <!--页面顶部右侧-->
+            <div class="rt">
+            <ul class="top_right_nav ">
+                <li>
+                    <a href="plus.html" class="tb">
+                        我的收藏<i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="plus.html">
+                        我的订单
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        登录
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        注册
+                    </a>
+                </li>
+            </ul>
+
+            </div>
+        </div>
+        </div>
+        <!--顶部二层logo即链接-->
+        <div id="posi">
+        <div id="top_logo">
+            <ul class="top_1_nav">
+            <li class="img_logo">
+                <a href="plus.html">
+                    <img src="imgsc/logo-new_294da7f.png" >
+                </a>
+            </li>
+            <li>
+            <ul class="top_2_nav">
+                <li>
+                        <a href="plus.html">
+                            PRO手机
+                        </a>
+                        <!-------PRO手机下拉框-------->
+                        <div class="box_pro">
+                        <div class="pro">
+                            <ul class="pro_ul">
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                </ul>
+                        </div>
+                        </div>
+                    </li>
+                <li>
+                        <a href="plus.html">
+                           魅蓝手机
+                        </a>
+                        <!----------魅蓝手机下拉框------->
+                        <div class="box_pro">
+                            <div class="pro">
+                                <ul class="pro_ul">
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                <li>
+                        <a href="plus.html">
+                            MX手机
+                        </a>
+                        <!-------MX手机下拉框------->
+                        <div class="box_pro">
+                            <div class="pro">
+                                <ul class="pro_ul">
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                <li>
+                        <a href="plus.html">
+                            精选配件
+                        </a>
+                        <!---------精选配件下拉框----------->
+                        <div class="box_pro">
+                            <div class="pro">
+                                <ul class="pro_ul">
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                <li>
+                        <a href="plus.html">
+                            智能硬件
+                        </a>
+                        <!--智能配件下拉框-->
+                        <div class="box_pro">
+                            <div class="pro">
+                                <ul class="pro_ul">
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                    <li class="pro_li"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                <li class="box_pro1"></li>
+            </ul>
+            </li>
+
+            </ul>
+        </div>
+        </div>
+    </header>
+<!------------------------轮播广告即商品分类------------------------>
+    <nav id="nav">
+    <!--轮播广告-->
+        <div id="bg_box">
+            <div id="bg" class="show">
+                <div id="g1" class="show">
+                    <a href="plus.html"></a>
+                </div>
+                <div id="g2">
+                    <a href="plus.html"></a>
+                </div>
+                <div id="g3">
+                    <a href="plus.html"></a>
+                </div>
+                <div id="g4">
+                    <a href="plus.html"></a>
+                </div>
+                <div id="g5">
+                    <a href="plus.html"></a>
+                </div>
+                <div id="g6">
+                    <a href="plus.html"></a>
+                </div>
+            </div>
+            <!--轮播按钮-->
+            <div class="slick_left"></div>
+            <div class="slick_right"></div>
+            <div class="slick_bottom">
+                <ul>
+                    <li>
+                        <i class="a1 action"></i>
+                    </li>
+                    <li>
+                        <i class="a2" ></i>
+                    </li>
+                    <li>
+                        <i class="a3"></i>
+                    </li>
+                    <li>
+                        <i class="a4"></i>
+                    </li>
+                    <li>
+                        <i class="a5"></i>
+                    </li>
+                    <li>
+                        <i class="a6"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--商品分类栏-->
+        <div id="dis">
+        <div class="nav_dis">
+            <ul>
+                <li>
+                    手机
+                    <!--商品分类弹出框手机-->
+                    <div class="dis_classify">
+                        <div class="dis_sj_left"></div>
+                        <div class="dis_sj_right">
+                            <a href="plus.html"><div><img src="imgsc/Cgbj0Fjst1SAcqINAABHjhVKzio741.jpg"/></div></a>
+                            <a href="plus.html"><div><img src="imgsc/Cgbj0FjsXwiAAvRUAABKLQS_yxw285.jpg"/></div></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    智能硬件
+                    <!--商品分类弹出框智能硬件-->
+                    <div class="dis_classify">
+                <div class="dis_sj_left"></div>
+                <div class="dis_sj_left">
+                    <!--弹出框智能出行-->
+                    <a href="plus.html" class="sj_left_title">智能出行</a>
+                    <a href="plus.html">
+                        <img src="imgsc/Cix_s1hsWH2AYgU2AAFpQifbPYQ147_180x180.png" alt=""/>
+                        <div>
+                            魅航行车记录仪
+                        </div>
+                    </a>
+                    <a href="plus.html">
+                        <img src="imgsc/Cix_s1hsWP-AIRESAAIoTvwAT-0535_180x180.png"/>
+                        <div>
+                            极客行车记录仪
+                        </div>
+                    </a>
+                    <a href="plus.html">
+                        <img src="imgsc/Cix_s1eFtHmAKzjJAABXVrwLVgU637_180x180.jpg"/>
+                        <div>
+                            车载智能盒子
+                        </div>
+                    </a>
+                    <a href="plus.html">
+                        <img src="imgsc/Cgbj0VjMTQqARER0AAFFjirPAYo631_180x180.png"/>
+                        <div>
+                            车载空气净化器
+                        </div>
+                    </a>
+                    <a href="plus.html">
+                        <img src="imgsc/CnQOjVg77wSAOdeiAAIZ0C5NuEs054_180x180.png"/>
+                        <div>
+                            智能电动独轮车
+                        </div>
+                    </a>
+                    <a href="plus.html">
+                        <img src="imgsc/CnQOjVfriLuAWTKfAAG6mtx_wGE934_180x180.png"/>
+                        <div>
+                            云马C1电单车
+                        </div>
+                    </a>
+                </div>
+                <div class="dis_sj_right">
+                    <a href="plus.html"><div><img src="imgsc/Cgbj0VjcwrKAcImvAABiBnfeA6A758.png"/></div></a>
+                    <div class="dis_sj_img">
+                        <a href="plus.html"><img src="imgsc/Cgbj0Vjcw0GAW5bcAAANdB-tOcM489.png"/></a>
+                        <a href="plus.html"><img src="imgsc/Cgbj0Fjcw_SAM6QlAAANk0aBsjo204.png"/></a>
+                        <a href="plus.html"><img src="imgsc/Cgbj0FjcxCaAIWOBAAAQJyvyE6s200.jpg"/></a>
+                        <a href="plus.html"><img src="imgsc/Cgbj0FjcxFSAPrwUAAAKnx4_otQ226.png"/></a>
+                    </div>
+                </div>
+        </div>
+            </li>
+                <li>
+                    耳机/音箱
+                    <!--商品分类弹出框耳机、音箱-->
+                    <div class="dis_classify">
+                        <div class="dis_sj_left"></div>
+                            <div class="dis_sj_right">
+                                <a href="plus.html"><div><img src="imgsc/Cgbj0VjfaMiAZpzVAABjg7_efhw853.png"/></div></a>
+                                <div class="dis_sj_img">
+                                    <a href="plus.html"><img src="imgsc/Cgbj0Vjcw0GAW5bcAAANdB-tOcM489.png"/></a>
+                                    <a href="plus.html"><img src="imgsc/Cgbj0Fjcw_SAM6QlAAANk0aBsjo204.png"/></a>
+                                    <a href="plus.html"><img src="imgsc/Cgbj0FjcxCaAIWOBAAAQJyvyE6s200.jpg"/></a>
+                                    <a href="plus.html"><img src="imgsc/Cgbj0FjcxFSAPrwUAAAKnx4_otQ226.png"/></a>
+                                </div>
+                            </div>
+                    </div>
+                </li>
+                <li>
+                    路由器/智能娱乐
+                    <!--商品分类弹出框路路由器-->
+                    <div class="dis_classify">
+                        <div class="dis_sj_left">
+                            <!--弹出框路由器-->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    保护套/后盖/移动电源
+                    <!--商品分类弹出框保护套-->
+                    <div class="dis_classify">
+                        <div class="dis_sj_left"></div>
+                    </div>
+                </li>
+                <li>
+                    手机配件/办公设备
+                    <!--商品分类弹出框数据线-->
+                    <div class="dis_classify">
+                        <div class="dis_sj_left"></div>
+                        <div class="dis_sj_right">
+                            <a href="plus.html"><div><img src="imgsc/Cgbj0FjfaJOADwC8AABdH3qT5m0831.png"/></div></a>
+                            <div class="dis_sj_img">
+                                <a href="plus.html"><img src="imgsc/Cgbj0Vjcw0GAW5bcAAANdB-tOcM489.png"/></a>
+                                <a href="plus.html"><img src="imgsc/Cgbj0Fjcw_SAM6QlAAANk0aBsjo204.png"/></a>
+                                <a href="plus.html"><img src="imgsc/Cgbj0FjcxCaAIWOBAAAQJyvyE6s200.jpg"/></a>
+                                <a href="plus.html"><img src="imgsc/Cgbj0FjcxFSAPrwUAAAKnx4_otQ226.png"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    周边配件
+                    <!--商品分类弹出框配件-->
+                    <div class="dis_classify">
+                        <div class="dis_sj_left">
+                            <!--弹出框生活周边-->
+                            <a href="plus.html" class="sj_left_title">生活周边</a>
+
+
+                            <a href="plus.html">
+                                <img src="imgsc/CnQOjVgQZhWAexUeAAVBTlzLU4U933_180x180.png"/>
+                                <div>
+                                    魅族休闲双肩包
+                                </div>
+                            </a>
+                            <a href="plus.html">
+                                <img src="imgsc/Cgbj0FjU3LaAFmbBAACVRHk1HFM912_180x180.png"/>
+                                <div>
+                                    迅雷下载宝
+                                </div>
+                            </a>
+                            <!--弹出框手机镜头-->
+                            <a href="plus.html" class="sj_left_title">手机镜头</a>
+                            <a href="plus.html">
+                                <img src="imgsc/CnQOjVeMgROAf_ciAAcLtp4-zlA316.png"/>
+                                <div>
+                                    猎奇 手机镜头套装
+                                </div>
+                            </a>
+                            <a href="plus.html">
+                                <img src="imgsc/CnQOjVeZd-aACZuLAFQ1DuBT8ZA231_180x180.png"/>
+                                <div>
+                                    猎奇 机器人镜头
+                                </div>
+                            </a>
+                            <!--弹出框自拍杆-->
+                            <a href="plus.html" class="sj_left_title">自拍杆</a>
+                            <a href="plus.html">
+                                <img src="imgsc/CnQOjVfriLuAWTKfAAG6mtx_wGE934_180x180.png"/>
+                                <div>
+                                    航拍器无人机
+                                </div>
+                            </a>
+                            <a href="plus.html">
+                                <img src="imgsc/Cix_s1jENUOAH6CFAAPtb3y3Obc704_180x180.png"/>
+                                <div>
+                                    纽曼智能VR眼镜
+                                </div>
+                            </a>
+                            <a href="plus.html">
+                                <img src="imgsc/Cix_s1jGFNiAGo1lAAIXT7S3bdY478_180x180.png"/>
+                                <div>
+                                    魅族 线控自拍杆
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        </div>
+        <!--商品分类下小广告-->
+        <ul id="nav_m">
+            <li class="nav_cay">
+                <a href="plus.html">
+                    <i>
+                        <img src="imgsc/2017-04-02_133914_03.png" />
+                    </i>
+                    M码通道
+                </a>
+                <a href="plus.html">
+                    <i>
+                        <img src="imgsc/2017-04-02_133914_05.png" />
+                    </i>
+                    以旧换新
+                </a>
+                <a href="plus.html">
+                    <i>
+                    <img src="imgsc/2017-04-02_133914_09.png" />
+                     </i>
+                    魅族意外保
+                </a>
+                <a href="plus.html">
+                    <i>
+                        <img src="imgsc/2017-04-02_133914_09-10.png" />
+                    </i>
+                    回购单查询
+                </a>
+            </li>
+            <li>
+                <a href="plus.html">
+                    <img src="imgsc/CnQOjVhFNwmAYvQrAAAqUbqSkrE237.jpg" />
+                </a>
+            </li>
+            <li>
+                <a href="plus.html">
+                    <img src="imgsc/Cgbj0Fjbg--AHntAAAAtXh7fN4M356.jpg" />
+                </a>
+            </li>
+            <li>
+            <a href="plus.html">
+                <img src="imgsc/Cgbj0FjTfA-AY1eZAAApkRlaNus266.jpg" />
+            </a>
+        </li>
+            <li>
+                <a href="plus.html">
+                    <img src="imgsc/CnQOjVhjWnuASBpJAAAtDRFMnkA687.png" />
+                </a>
+            </li>
+        </ul>
+        <!--热门推荐-->
+        <div class="nav_home ">
+            <div class="b_buttom ">
+                <div class="h3 lf">热品推荐</div>
+                <div class="lt">
+                    <a class="ivd"> </a>
+                    <a ></a>
+                </div>
+            </div>
+            <div class="nav_home_gt">
+                <div id="nav_home_box"  style="left: 0" class="anchor">
+                <ul>
+                    <li>
+                        <a href="plus.html">
+                            <dl>
+                                <dt>
+                                    <img src="imgsc/Cix_s1iGyluAOI61AARw4nf6J5k613_180x180.png"/>
+                                </dt>
+                                <dd>魅蓝 Note5礼盒</dd>
+                                <dd class="nav_home_red">
+                                    礼盒含防爆膜 缤纷保护壳
+                                </dd>
+                                <dd class="nav_home_red">限时特惠&yen;1099起</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="plus.html">
+                            <dl>
+                                <dt>
+                                    <img src="imgsc/CnQOjVg3n0GAR_LJAAWx9fASyOs582_180x180.png"/>
+                                </dt>
+                                <dd>先锋入耳蓝牙运动耳机</dd>
+                                <dd class="nav_home_red">
+                                    最高支持6期免息
+                                </dd>
+                                <dd class="nav_home_red">限时特惠&yen;249</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="plus.html">
+                            <dl>
+                                <dt>
+                                    <img src="imgsc/CnQOjVjJDr2AarmeAAHHBr4HTLQ079_180x180.png"/>
+                                </dt>
+                                <dd>新游智能游戏手柄XM-1</dd>
+                                <dd class="nav_home_red">
+                                    魅族熊猫色定制手柄
+                                </dd>
+                                <dd class="nav_home_red">限时特惠&yen;78</dd>
+                            </dl>
+                            <i class="th"></i>
+                        </a>
+                    </li>
+                    <li>
+                    <a href="plus.html">
+                        <dl>
+                            <dt>
+                                <img src="imgsc/CnQOjVeFtG6AY_FpAAKdyPUHRpQ152_180x180.png"/>
+                            </dt>
+                            <dd>魅族移动电源（标准版）</dd>
+                            <dd class="nav_home_red">
+                                素雅百搭 颜值典范
+                            </dd>
+                            <dd class="nav_home_red">限时特惠&yen;99</dd>
+                        </dl>
+                    </a>
+                    </li>
+                    <li style="margin-right:1px">
+                        <a href="plus.html">
+                            <dl>
+                                <dt>
+                                    <img src="imgsc/Cix_s1i8vEGAKx1oAAHOwfpsRUs571_180x180.png"/>
+                                </dt>
+                                <dd>森海塞尔CX215入耳式耳机</dd>
+                                <dd class="nav_home_red">
+                                    0.5mm蝉翼振膜
+                                </dd>
+                                <dd class="nav_home_red">&yen;209</dd>
+                            </dl>
+                            <i class="xp"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="plus.html">
+                            <dl>
+                                <dt>
+                                    <img src="imgsc/CnQOjVg7_zCAWnDJAAf9-f-xq9Y316_180x180.png"/>
+                                </dt>
+                                <dd>魅族PRO 6s</dd>
+                                <dd class="nav_home_red">
+                                    <span class="zp"></span>
+                                    购机赠智能保护膜
+                                </dd>
+                                <dd class="nav_home_red">&yen;2699起</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="plus.html">
+                            <dl>
+                                <dt>
+                                    <img src="imgsc/Cgbj0VjYdGWAAFuvAAvhVMfnh40745_180x180.png"/>
+                                </dt>
+                                <dd>魅蓝 Note3</dd>
+                                <dd>金属指纹全网通</dd>
+                                <dd class="nav_home_red">&yen;799起</dd>
+                            </dl>
+                            <i class="xp"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="plus.html">
+                            <dl>
+                                <dt>
+                                    <img src="imgsc/CnQOjVeFtG6AY_FpAAKdyPUHRpQ152_180x180.png"/>
+                                </dt>
+                                <dd>魅族移动电源(标准版)</dd>
+                                <dd>素雅白搭 颜值典范</dd>
+                                <dd class="nav_home_red">&yen;99</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="plus.html">
+                            <dl>
+                                <dt>
+                                    <img src="imgsc/CnQOjVhsV4iAQvjhAAKyPqoa7PE339_180x180.png"/>
+                                </dt>
+                                <dd>乐心心率手环MAMBO2</dd>
+                                <dd class="nav_home_red">
+                                    <span class="xs"></span>
+                                    20元优惠券
+                                </dd>
+                                <dd class="nav_home_red">&yen;169</dd>
+                            </dl>
+                            <i class="th"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="plus.html" style="width: 245px">
+                            <dl>
+                                <dt>
+                                    <img src="imgsc/Cix_s1jENUOAH6CFAAPtb3y3Obc704_180x180.png"/>
+                                </dt>
+                                <dd>纽曼智能VR眼镜</dd>
+                                <dd>佩戴舒适 人性化设计</dd>
+                                <dd class="nav_home_red">限时特惠&yen;39</dd>
+                            </dl>
+                            <i class="xp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="nav_mx6" >
+                <img src="imgsc/Cgbj0FjbguGAXpA0AAFxlYZSGCs928.jpg"/>
+            </div>
+        </div>
+    </nav>
+<!------------------------手机详情------------------------>
+    <section id="section"   class="clear">
+        <!--一楼手机-->
+        <div class="section_picture">
+            <div class="h3 anchor">
+                手机
+                <span class="rt"><a href="plus.html">更多&gt;</a></span>
+            </div>
+            <ul class="section_phone img">
+
+            </ul>
+            <div class="nav_mx6" >
+                <img src="imgsc/Cgbj0FjPT1iAE4qBAACnsG34miY406.jpg"/>
+            </div >
+    <!--二楼精选配件-->
+            <!--导航-->
+            <div class="h3_div clear">
+                <ul class="h3_ul">
+                    <li class="h3 anchor">
+                        精选配件
+                    </li>
+                    <li>
+                        <a href="plus.html">耳机音箱</a>
+                    </li>
+                    <li>
+                        <a href="plus.html">路由器/移动电源</a>
+                    </li>
+                    <li>
+                        <a href="plus.html">移动内存</a>
+                    </li>
+                    <li>
+                        <a href="plus.html">电源适配器</a>
+                    </li>
+                    <li>
+                        <a href="plus.html">手机镜头</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="section_phone img">
+
+            </ul>
+            <div class="nav_mx6" >
+                <img src="imgsc/index4.png"/>
+            </div >
+            <!--三楼智能硬件->
+            <!--导航-->
+            <div class="h3_div clear">
+                <ul class="h3_ul">
+                    <li class="h3 anchor">
+                        智能硬件
+                    </li>
+                    <li>
+                        <a href="plus.html">智能家具</a>
+                    </li>
+                    <li>
+                        <a href="plus.html">智能出行</a>
+                    </li>
+                    <li>
+                        <a href="plus.html">智能娱乐</a>
+                    </li>
+                    <li>
+                        <a href="plus.html">智能健康</a>
+                    </li>
+                    <li>
+                        <a href="plus.html">键盘鼠标</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="section_phone img">
+
+            </ul>
+            <!--四楼手机周边->
+           <!--导航-->
+            <div class="h3_div clear">
+                <ul class="h3_ul">
+                    <li class="h3 anchor">
+                        手机周边
+                    </li>
+                    <li>
+                        <a href="plus.html">保护套/后盖/贴膜</a>
+                    </li>
+                    <li>
+                        <a href="plus.html">数据线/电源适配器</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="section_phone img">
+
+            </ul>
+        </div>
+    </section>
+<!-------------------------页面底部--------------------------->
+    <footer id="footer">
+        <div class="footer_bao">
+            <ul>
+             <li>
+                 <div>
+                     <span></span>
+                    <b>7天</b> 无理由退款
+                 </div>
+             </li>
+                <li>
+                    <div>
+                     <span class="bao_2">
+                     </span>
+                        <b>15天</b> 换货保障
+                    </div>
+                </li>
+                <li>
+                    <div>
+                     <span class="bao_3">
+                     </span>
+                        <b>1年</b> 免费保修
+                    </div>
+                </li>
+                <li>
+                    <div>
+                     <span class="bao_4">
+                     </span>
+                        <b>百城</b> 速达
+                    </div>
+                </li>
+                <li>
+                    <div>
+                     <span class="bao_5">
+                     </span>
+                        <b>全场</b> 包邮
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                     <span class="bao_6"></span>
+                        <b>2000多家</b> 专卖店
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="bottom">
+            <!--魅族商城-->
+            <div id="bottom_box">
+                <div id="bottom_service">
+                    <ul>
+                        <li><b>帮助说明</b></li>
+                        <li><b>Flyme</b></li>
+                        <li><b>关于我们</b></li>
+                        <li><b>关注我们</b></li>
+                        <li><a href="plus.html">支付方式</a></li>
+                        <li><a href="plus.html">开放平台 </a></li>
+                        <li><a href="plus.html">关于魅族</a></li>
+                        <li><a href="plus.html">新浪微博</a></li>
+                        <li><a href="plus.html">配送说明 </a></li>
+                        <li><a href="plus.html">固件下载 </a></li>
+                        <li><a href="plus.html">加入我们  </a></li>
+                        <li><a href="plus.html">腾讯微博</a></li>
+                        <li><a href="plus.html">售后服务</a></li>
+                        <li><a href="plus.html">软件商店  </a></li>
+                        <li><a href="plus.html">联系我们 </a></li>
+                        <li><a href="plus.html">QQ空间</a></li>
+                        <li><a href="plus.html">付款帮助</a></li>
+                        <li><a href="plus.html">查找手机</a></li>
+                        <li><a href="plus.html">法律声明</a></li>
+                        <li><a href="plus.html">官方微博</a></li>
+                    </ul>
+                </div>
+                <!--右侧在线客服-->
+                <div class="service_number">
+                    <ul>
+                        <li ><b style="color:#999;">24小时全国服务热线</b></li>
+                        <li class="thick">400-788-3333</li>
+                        <li class="inex"><a href="plus.html" class="service">24小时在线客服</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--底部版权声明-->
+        <div id="bottom_en">
+            <div class="lf po">
+                <p>
+                    ©2017 Meizu Telecom Equipment Co., Ltd. All rights reserved.
+                    &nbsp;备案号：
+                    <a href="plus.html">粤ICP备13003602号-2</a>
+                    经营许可证编号：<a href="plus.html">粤B2-20130198</a>
+                    <a href="plus.html">营业执照</a>
+                    <a href="plus.html" class="mm"></a>
+                    <a href="plus.html" class="nn"></a>
+                    <a href="plus.html" class="bb"></a>
+                </p>
+        </div>
+            <!--回到顶部-->
+        <div id="magnet_link" >
+            <a class="anchor1">热品</a>
+            <a class="anchor1">手机</a>
+            <a class="anchor1">配件</a>
+            <a class="anchor1">智能</a>
+            <a class="anchor1">周边</a>
+            <a href="plus.html">
+                <i></i>
+            </a>
+            <a class="Top">
+                <i></i>
+            </a>
+        </div>
+        </div>
+    </footer>
+<script src="js/mz_shop.js"></script>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/productlist.js"></script>
+
+</body>
+</html>

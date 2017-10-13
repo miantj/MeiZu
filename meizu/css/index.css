@@ -1,0 +1,668 @@
+/*******1、公共样式*******/
+body {
+  font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #515151;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: #31a5e7;
+  text-decoration: none;
+}
+.bg {
+  background: #f4f4f4;
+  width: 100%;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+/********************************顶部logo***********************************/
+#progress {
+  height: 4px;
+  background: #3db1fa;
+  width: 0;
+  transition: opacity 500ms linear;
+}
+#nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  max-height: 1050px;
+  background-color: #333;
+}
+#nav div.top {
+  width: 1240px;
+  height: 100%;
+  margin: 0 auto;
+}
+/*页面顶部*/
+#nav div.nav_top {
+  width: 1240px;
+  margin: 0 auto;
+  position: relative ;
+  z-index: 999;
+  vertical-align: bottom;
+  padding-top: 26px ;
+}
+#nav div.nav_top a:first-child {
+  display: block;
+  width: 115px;
+  height: 20px;
+  background: url("../img/logo-new_774b3e9.png") no-repeat;
+}
+#nav div.nav_top a:last-child {
+  font-size: 16px;
+  color: #fff;
+}
+/*中间内容*/
+.active-before {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0);
+  -webkit-transition: opacity 2s, -webkit-transform 2s;
+  transition: opacity 2s, transform 2s;
+}
+.actived {
+  opacity: 1;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+div.content {
+  width: 380px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -190px;
+  z-index: 999;
+}
+#nav div.content_a {
+  width: 308px;
+  height: 58px;
+  margin: 45px 36px 0 36px ;
+  border: 2px solid #fff;
+}
+#nav div.content_a a:first-child {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  width: 152px;
+  height: 54px;
+  text-align: center;
+  line-height: 50px;
+  border-right: 2px solid #fff ;
+}
+#nav div.content_a a:last-child {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  width: 152px;
+  height: 54px;
+  text-align: center;
+  line-height: 50px;
+}
+#nav div.content_a a:hover {
+  background: #fff;
+  color: #28a2fe;
+}
+span.mouse {
+  width: 24px;
+  height: 54px;
+  position: absolute;
+  left: 50%;
+  margin-left: -12px;
+  bottom: 20px;
+  background: url("../img/mouse.png") no-repeat;
+  z-index: 999;
+}
+span.mouse i.mouse_arrow {
+  display: block;
+  height: 13px;
+  width: 24px;
+  background: url("../img/arrow.png") no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: arrow 1.5s linear infinite;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+/*背景轮播*/
+div.m3_bg1 {
+  animation: backgroundChange-l 36s linear infinite;
+  z-index: 6;
+  background: url("../img/banner_05_ad7e4bc.jpg") no-repeat center 0;
+}
+div.m3_bg2 {
+  animation: backgroundChange-r 36s 6s linear infinite;
+  z-index: 5;
+  background: url("../img/banner_01_be5e38b.jpg") no-repeat center 0;
+}
+div.m3_bg3 {
+  animation: backgroundChange-t 36s 12s linear infinite;
+  z-index: 4;
+  background: url("../img/banner_06_9d77a46.jpg") no-repeat center 0;
+}
+div.m3_bg4 {
+  animation: backgroundChange-l 36s 18s linear infinite;
+  z-index: 3;
+  background: url("../img/banner_02_4385c72.jpg") no-repeat center 0;
+}
+div.m3_bg5 {
+  animation: backgroundChange-r 36s 24s linear infinite;
+  z-index: 2;
+  background: url("../img/banner_07_90bd67f.jpg") no-repeat center 0;
+}
+div.m3_bg6 {
+  animation: backgroundChange-t 36s 30s linear infinite;
+  z-index: 1;
+  background: url("../img/banner_03_69fc834.jpg") no-repeat center 0;
+}
+#nav div.bg {
+  position: absolute;
+  left: -10%;
+  top: -10%;
+  width: 120%;
+  height: 120%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: 0;
+}
+@keyframes backgroundChange-l {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  5.55% {
+    opacity: 1;
+  }
+  11.11% {
+    opacity: 1;
+  }
+  17% {
+    -webkit-transform: translate3d(-5%, 0, 0);
+    -moz-transform: translate3d(-5%, 0, 0);
+    -ms-transform: translate3d(-5%, 0, 0);
+    -o-transform: translate3d(-5%, 0, 0);
+    transform: translate3d(-5%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes backgroundChange-t {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  5.55% {
+    opacity: 1;
+  }
+  11.11% {
+    opacity: 1;
+  }
+  17% {
+    -webkit-transform: translate3d(5%, 0, 0);
+    -moz-transform: translate3d(5%, 0, 0);
+    -ms-transform: translate3d(5%, 0, 0);
+    -o-transform: translate3d(5%, 0, 0);
+    transform: translate3d(5%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes backgroundChange-r {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  5.55% {
+    opacity: 1;
+  }
+  11.11% {
+    opacity: 1;
+  }
+  17% {
+    -webkit-transform: translate3d(5%, 0, 0);
+    -moz-transform: translate3d(5%, 0, 0);
+    -ms-transform: translate3d(5%, 0, 0);
+    -o-transform: translate3d(5%, 0, 0);
+    transform: translate3d(5%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/****************************页面主体**********************************************/
+#header {
+  position: absolute;
+  top: 1050px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+}
+div.head_top {
+  width: 1240px;
+  margin: 0 auto;
+}
+div.head_top:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.top_left a {
+  display: block;
+  width: 50%;
+}
+div.top_right {
+  width: 50%;
+}
+div.top_right ul {
+  padding-top: 96px;
+}
+div.top_right li {
+  float: left;
+  width: 25%;
+  height: 135px;
+  text-align: center;
+}
+div.top_right li a {
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+}
+div.top_right li img {
+  padding: 0 15px 10px 15px ;
+}
+/*魅族手机*/
+div.index_phone {
+  width: 100%;
+  background: #fff;
+  padding: 105px 0 50px ;
+}
+div.phone_swipe {
+  width: 1240px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+div.phone_swipe:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.phone {
+  width: 4128px;
+  position: relative;
+  left: 0;
+  top: 0;
+  -webkit-transition: left 0.5s linear ;
+  -moz-transition: left 0.5s linear ;
+  -ms-transition: left 0.5s linear ;
+  -o-transition: left 0.5s linear ;
+  transition: left 0.5s linear ;
+}
+div.phone:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.phone li {
+  float: left;
+  margin-right: 134px;
+}
+div.phone a {
+  width: 210px;
+  display: block;
+  text-align: center;
+}
+div.phone li a img + p {
+  margin-top: 30px;
+}
+/*魅族手机分页*/
+div.phone_pagination {
+  text-align: center;
+  margin: 42px auto 0;
+}
+div.phone_pagination span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  margin: 0 5px ;
+}
+div.phone_pagination span.pag {
+  background: #333;
+}
+/*魅族服务*/
+div.index_server:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.index_server {
+  border-top: 1px solid #eee;
+  background: #fff;
+  text-align: center;
+}
+div.index_server ul {
+  width: 1240px;
+  margin: auto;
+  padding: 66px 130px;
+}
+div.index_server ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.index_server li {
+  float: left;
+  margin: 0 68px;
+}
+div.index_server li a {
+  display: block;
+}
+/*魅族体验中心*/
+div.index_service {
+  width: 100%;
+  height: 380px;
+  background: url("../img/server-bg_16fbcff.jpg") no-repeat center 0;
+}
+div.service_content {
+  margin: 0 auto;
+  padding-top: 100px  ;
+  width: 400px;
+  text-align: center;
+  color: #fff;
+}
+div.service_content h1 {
+  font-size: 35px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+div.service_content p:last-child a {
+  display: block;
+  width: 185px;
+  height: 45px;
+  line-height: 40px;
+  margin: 62px auto 0;
+  border: 1px solid #fff;
+  color: #fff;
+}
+/*下方4张小图*/
+div.index_row {
+  width: 1240px;
+  height: 300px;
+  margin: 0 auto;
+}
+div.index_row ul {
+  padding-top: 50px;
+}
+div.index_row ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.index_row li {
+  float: left;
+  margin-right: 200px;
+  text-align: center;
+}
+div.index_row li:last-child {
+  margin-right: 0;
+}
+div.index_row li dl dt + dd {
+  font-size: 20px;
+  color: #515151;
+}
+div.index_row li dl dd:last-child {
+  color: #999999;
+}
+/**********************************页面底部*****************************************/
+#bottom {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+#bottom a {
+  color: #666;
+  text-decoration: none;
+}
+#bottom a:hover {
+  color: #31a5e7;
+}
+#bottom_box {
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  font-size: 12px;
+}
+#bottom_service {
+  height: 150px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+#bottom_service ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#bottom_service ul li {
+  width: 25%;
+  height: 30px;
+}
+#bottom_service ul b {
+  display: inline-block;
+  font-size: 14px;
+}
+/*�Ҳ����  */
+#bottom div.service_number {
+  width: 300px;
+  height: 150px;
+  position: relative;
+}
+#bottom div.service_number ul li {
+  float: right;
+  text-align: right;
+}
+#bottom li.thick {
+  font-size: 28px;
+}
+#bottom a.service {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 20px;
+  background: url("../img/icon-phone_d23e91d.png") no-repeat 0 9px;
+  text-decoration: none;
+}
+#bottom li.inex:hover {
+  background: #37a2e5;
+}
+#bottom li.inex {
+  background: #3db1fa;
+  width: 170px;
+  height: 40px;
+  margin-top: 20px ;
+}
+/*�ײ���Ȩ����*/
+#bottom_en {
+  width: 1280px;
+  border-top: 1px solid #eeeeee;
+  padding: 10px 0;
+  font-size: 12px;
+  color: #999;
+  margin: 0 auto;
+}
+#bottom_en div.po {
+  width: 55%;
+  line-height: 20px;
+  padding-bottom: 30px;
+}
+#bottom_en a {
+  color: #999;
+  vertical-align: bottom;
+  padding: 0 3px;
+  text-decoration: none;
+}
+#bottom_en span i,
+#bottom_en a.mm,
+#bottom_en a.nn,
+#bottom_en a.bb,
+#bottom_en div.bnb a.wb,
+#bottom_en div.bnb a.wx,
+#bottom_en div.bnb a.qq {
+  background: url("../img/mjing.png") no-repeat;
+}
+#bottom_en span i.jz {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+  background-position: 0 -85px;
+}
+#bottom_en a.mm {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: -25px 0;
+}
+#bottom_en a.mm:hover {
+  background-position: 3px 0;
+}
+#bottom_en a.nn {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: -25px -57px;
+}
+#bottom_en a.nn:hover {
+  background-position: 3px -57px;
+}
+#bottom_en a.bb {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: -85px -58px;
+}
+#bottom_en a.bb:hover {
+  background-position: -57px -58px;
+}
+/*底部图标*/
+#bottom_en div.bnb {
+  font-size: 14px;
+  position: relative;
+}
+#bottom_en div.bnb a {
+  margin: 0 10px;
+}
+#bottom_en div.bnb a.wb {
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  background-position: -25px -30px;
+}
+#bottom_en div.bnb a.wb:hover {
+  background-position: 3px -30px;
+}
+#bottom_en div.bnb a.wx {
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  background-position: -83px -30px;
+}
+#bottom_en div.bnb a.wx img {
+  position: absolute;
+  top: 0;
+  left: 130px;
+  height: 0;
+  transition: all 300ms linear;
+}
+#bottom_en div.bnb a.wx:hover img {
+  top: -220px;
+  left: 40px;
+  height: 221px;
+  display: inline-block;
+}
+#bottom_en div.bnb a.wx:hover {
+  background-position: -55px -30px;
+}
+#bottom_en div.bnb a.qq {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: -58px 0;
+}
+#bottom_en div.bnb a.qq:hover {
+  background-position: -86px 0;
+}

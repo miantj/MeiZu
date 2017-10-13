@@ -1,0 +1,301 @@
+/*******1��������ʽ*******/
+body {
+  font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #515151;
+  box-sizing: border-box;
+  visibility: visible;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: #333;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+input {
+  outline: none;
+}
+#progress {
+  height: 4px;
+  background: #3db1fa;
+  width: 0;
+  transition: opacity 500ms linear;
+}
+/*注册成功摸态框*/
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  display: none;
+}
+.modal-dialog {
+  width: 370px;
+  margin: 200px auto;
+}
+.modal-content {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #aaa;
+  padding: 16px 12px;
+  text-align: center;
+}
+/****************ҳ�涥��logo**************/
+#header {
+  width: 100%;
+}
+#header div.header_top {
+  width: 1200px;
+  height: 70px;
+  margin: 0 auto;
+  line-height: 70px;
+}
+#header span.logo {
+  display: inline-block;
+  width: 110px;
+  height: 20px;
+  float: left;
+  margin-top: 20px;
+  background: url("../Images/base.png") no-repeat -2px -4px;
+}
+/*****************ҳ������****************/
+#section div.section_bg {
+  width: 100%;
+  min-height: 750px;
+  background: url("../Images/banner.png") no-repeat center center;
+  position: relative;
+}
+#form input {
+  border: none;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#form div {
+  margin-bottom: 20px;
+}
+#form div:last-child {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+}
+#form {
+  border-radius: 30px;
+}
+#form h1 {
+  text-align: center;
+  color: #333333;
+}
+.section_form_text,
+.section_form_pass {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #32a5e7;
+  border-radius: 10px;
+}
+.form_pass,
+.form_text {
+  width: 280px;
+  height: 40px;
+}
+.reg_txt {
+  height: 50px;
+  border: 1px solid #32a5e7;
+  border-radius: 10px;
+}
+.reg_sex {
+  line-height: 50px;
+}
+#reg_vcode {
+  height: 40px;
+  width: 130px;
+}
+.canvas {
+  position: absolute;
+  padding-top: 10px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+.span {
+  display: inline-block;
+  height: 40px;
+  width: 60px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #999999;
+  border-radius: 10px;
+  margin-left: 90px !important;
+  cursor: pointer;
+}
+#form div:last-child {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+}
+#reg_btn {
+  width: 290px;
+  height: 40px;
+  border-radius: 10px;
+  background: #32a5e7;
+  color: #fff;
+  font-size: 16px;
+}
+/*��¼��*/
+#form {
+  position: absolute;
+  top: 16%;
+  right: 15% ;
+  background: #fff;
+  padding: 35px 35px 10px;
+}
+/*�������ʾ*/
+.info {
+  width: 78%;
+  display: inline-block;
+  height: 33px;
+  margin: 20px 0 10px 0;
+  font-size: 12px;
+  padding-left: 35px;
+  padding-right: 25px;
+  line-height: 33px;
+  position: relative;
+  visibility: hidden;
+  background: #ffd1ca url("../Images/error-ico.png") no-repeat 10px 9px;
+}
+.op {
+  position: absolute ;
+  right: 5px;
+  top: 10px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+#check {
+  width: 15px;
+  height: 15px;
+  margin: 0  !important;
+  vertical-align: bottom;
+}
+/*ҳ��ײ�*/
+#footer {
+  width: 100%;
+}
+#footer div.fot_bao {
+  width: 1000px;
+  margin: 0 auto;
+}
+#footer div.fot_bao_kefu {
+  padding: 24px 0;
+  color: #000;
+}
+#footer div.fot_bao_kefu p.p1 {
+  line-height: 32px;
+}
+#footer div.fot_bao_kefu a {
+  color: #000;
+}
+#footer span.l {
+  display: inline-block;
+  border: 1px solid #000;
+  border-left: #666;
+  height: 7px;
+  margin: 0 10px;
+}
+#footer a.kefu {
+  display: inline-block;
+  width: 64px;
+  height: 20px;
+  line-height: 20px;
+  background: #32a5e7;
+  color: #fff !important;
+  text-align: center;
+  border-radius: 3px;
+}
+/*�ײ���Ȩ˵��*/
+#footer p.p2 {
+  font-size: 12px;
+  margin-top: 20px;
+  color: #999;
+}
+#footer p.p2 a {
+  color: #999;
+}
+#footer p.p2 a:hover {
+  color: #000;
+}
+/*�Ҳ�΢��*/
+#footer span.wb {
+  vertical-align: bottom;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("../Images/base.png") no-repeat -218px -91px;
+}
+#footer span.wb:hover {
+  background: url("../Images/base.png") no-repeat -218px -137px;
+}
+#footer span.wx {
+  position: relative;
+  vertical-align: bottom;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  background: url("../Images/base.png") no-repeat -302px -91px;
+}
+#footer span.wx:hover {
+  background: url("../Images/base.png") no-repeat -302px -137px;
+}
+#footer span.wx img {
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  height: 0;
+  transition: all 300ms linear;
+}
+#footer span.wx:hover img {
+  top: -220px;
+  left: -95px;
+  height: 221px;
+  display: inline-block;
+}
+#footer span.qq {
+  vertical-align: bottom;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("../Images/base.png") no-repeat -344px -91px;
+}
+#footer span.qq:hover {
+  background: url("../Images/base.png") no-repeat -344px -137px;
+}

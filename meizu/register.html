@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="魅族 PRO 6 Plus 概述、魅族、魅蓝图片、魅族官网、魅族商城" >
+    <title>魅族登录页</title>
+    <link href="img/favicon-2e71785f44.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="img/favicon-2e71785f44.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/register.css"/>
+</head>
+<body>
+<div id="progress"></div>
+<script>
+    var pgs=document.querySelector("#progress");
+    var wid=0;
+    var timer = setInterval(function(){
+        wid+=1;
+        pgs.style.width=wid+'%';
+        if(wid >=90){
+            clearInterval(timer);
+        }
+    },30);
+</script>
+<!---------页面顶部logo---------->
+<header id="header">
+        <div class="header_top">
+            <a href="login.html">
+              <span class="logo"></span>
+            </a>
+        </div>
+</header>
+<!----------------页面主体------------->
+<section id="section">
+    <div class="section_bg" >
+        <!--登录表单-->
+        <form id="form" >
+            <h1>新会员注册</h1>
+                <span id="err_html" class="info">
+                  html  <img src="Images/close-ico.png" class="op"/>
+                </span>
+
+            <div class="section_form_text">
+                <input type="text" name="phones" class="form_text" placeholder="请输入邮箱或手机号" maxlength="16"/>
+            </div>
+            <div class="section_form_pass">
+                <input type="password" class="form_pass" name="pwd" placeholder="密码" maxlength="11"/>
+            </div>
+            <div class="reg_txt checkCodes">
+                <input type="text" id="reg_vcode"  placeholder="请输入验证码" maxlength="4"/>
+                <div class="canvas dd">
+                    <canvas id="c9"></canvas>
+                </div>
+                <input type="button" value="刷新" class="span dd" >
+            </div>
+            <div class="reg_sex">
+                <p>滑动验证</p>
+            </div>
+            <div>
+                <p><input  id="check" type="checkbox"/>
+                    <label for="check">已同意《魅族服务条款》</label></p>
+            </div>
+            <div>
+                <input type="button" id="reg_btn" value="注册"/>
+            </div>
+        </form>
+    </div>
+</section>
+<!--登陆成功跳转摸态框-->
+<div class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h1 style="color:#32a5e7">注册成功</h1>
+            <p id="time">3秒后跳转到登陆页面！</p>
+        </div>
+    </div>
+</div>
+<!-------------页面底部------------>
+<footer id="footer">
+    <div class="fot_bao">
+        <div class=" fot_bao_kefu">
+            <p class="p1">
+                <a href="login.html">关于魅族</a>
+                <span class="l"></span>
+                <a href="login.html">工作机会</a>
+                <span class="l"></span>
+                <a href="login.html">联系我们</a>
+                <span class="l"></span>
+                <a href="login.html">法律声明</a>
+                <span class="l"></span>
+                <a href="login.html">常见问题</a>
+                <span class="l"></span>
+                <a href="login.html">简体中文</a> &nbsp; &nbsp; &nbsp; &nbsp;
+                客服热线 &nbsp; &nbsp;400-788-3333&nbsp; &nbsp;&nbsp; &nbsp;
+                <a class="kefu">在线客服</a>
+                <!--右侧微信-->
+                <a href="login.html">
+                    <span class="qq rt"></span>
+                </a>
+                <a href="login.html">
+                    <span class="wx rt">
+                        <img src="Images/weixin.png" />
+                    </span>
+                </a>
+                <a href="login.html">
+                <span class="wb rt"></span>
+                </a>
+            </p>
+            <!--底部版权声明-->
+                    <p class="p2">
+                        ©2017 Meizu Telecom Equipment Co., Ltd. All rights reserved.
+                        &nbsp;备案号：
+                        <a href="login.html">粤ICP备13003602号-2</a>
+                        经营许可证编号：<a href="login.html">粤B2-20130198</a>
+                        <a href="login.html">营业执照</a>
+                    </p>
+
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/register.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
