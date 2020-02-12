@@ -3,6 +3,8 @@
   background: #3db1fa;
   width: 0;
   transition: opacity 500ms linear;
+  position: fixed;
+  z-index: 1;
 }
 em {
   font-style: normal;

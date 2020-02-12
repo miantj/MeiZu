@@ -41,7 +41,7 @@ dd {
 }
 .video {
   position: absolute;
-  top: -20%;
+  top: -21%;
   left: 50%;
   margin-left: -50%;
   height: 100%;
@@ -51,7 +51,7 @@ dd {
   overflow: hidden;
 }
 .video video {
-  height: 135%;
+  height: 142%;
 }
 /****************ҳ�涥��logo**************/
 #progress {
@@ -59,6 +59,8 @@ dd {
   background: #3db1fa;
   width: 0;
   transition: opacity 500ms linear;
+  position: fixed;
+  z-index: 1;
 }
 #header {
   width: 100%;
